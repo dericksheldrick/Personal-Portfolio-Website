@@ -29,4 +29,8 @@ Derick Sheldrick - sheldrickderick9@gmail.com
 
 Project Link: https://github.com/dericksheldrick/Personal-Portfolio-Website
 
+<<<<<<< HEAD
 <p>
+=======
+<p>testin</p>
+>>>>>>> conflict-branch
