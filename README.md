@@ -16,14 +16,10 @@
   <li><strong>Responsiveness</strong>: The website is fully responsive, adapting to various devices and screen sizes.</li>
   <li><strong>Media Queries</strong>: Used to ensure the website looks great on all devices, with adjustments made to the layout, typography, and design elements for different breakpoints.</li>
 </ul>
-
-
-
 <h2>Getting Started</h2>
 To view the website, simply click on the link below:
 
 <a href="" target= "_blank">My Portfolio</a>
-
 
 <h2>License</h2>
 Distributed under the MIT License. See LICENSE for more information.
@@ -31,4 +27,4 @@ Distributed under the MIT License. See LICENSE for more information.
 <h2>Contact</h2>
 Derick Sheldrick - sheldrickderick9@gmail.com
 
-Project Link: https://github.com/your-username/your-repo-name
+Project Link: https://github.com/dericksheldrick/Personal-Portfolio-Website
