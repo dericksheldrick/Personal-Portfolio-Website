@@ -28,13 +28,3 @@ Distributed under the MIT License. See LICENSE for more information.
 Derick Sheldrick - sheldrickderick9@gmail.com
 
 Project Link: https://github.com/dericksheldrick/Personal-Portfolio-Website
-
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-# <p>
-
-> > > > > > > # conflict-branch
-
-<p>
->>>>>>> conflict-branch
