@@ -19,7 +19,7 @@
 <h2>Getting Started</h2>
 To view the website, simply click on the link below:
 
-<a href="" target= "_blank">My Portfolio</a>
+<a href="https://dericksheldrick.github.io/Personal-Portfolio-Website/" target= "_blank">My Portfolio</a>
 
 <h2>License</h2>
 Distributed under the MIT License. See LICENSE for more information.
