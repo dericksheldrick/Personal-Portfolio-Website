@@ -417,6 +417,15 @@ body {
       justify-content: flex-start;
       align-content: center;
       font-family: $header_font;
+
+      @media (max-width: $laptop) {
+        font-size: 2.8em;
+      }
+
+      @media (max-width: $tablet) {
+        font-size: 1.8em;
+        align-items: center;
+      }
     }
     p {
       display: flex;
