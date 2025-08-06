@@ -1,235 +1,212 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Derick Sheldrick</title>
-    <meta name="description" content="" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="./css/main.css" />
-    <script
-      src="https://kit.fontawesome.com/102d806e3c.js"
-      crossorigin="anonymous"
-    ></script>
-  </head>
-  <body>
-    <header>
-      <nav id="Navbar" class="nav">
-        <div id="home"></div>
-        <h2 class="Logo">De<span>rick</span></h2>
-        <input type="checkbox" id="Menu-ham" class="Menu-ham" />
-        <label for="Menu-ham" class="opening-button">
-          <div class="line"></div>
-          <div class="line"></div>
-          <div class="line"></div>
-        </label>
-        <label id="overlay" for="Menu-ham"></label>
-        <ul class="nav_left">
-          <label for="Menu-ham" class="close-button">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              height="20px"
-              width="30px"
-              viewBox="0 0 384 512"
-            >
-              <path
-                d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"
-              />
-            </svg>
-          </label>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#About">About</a></li>
-          <li><a href="#project">Projects</a></li>
-          <li><a href="#Contact">Contact</a></li>
-        </ul>
-      </nav>
-    </header>
-    <main>
-      <section class="hero" id="hero">
-        <div class="title">
-          <div class="title_section">
-            <h1>
-              Front End Developer
-              <img src="./image/wave.png" alt="waving hands" />
-            </h1>
-            <p>
-              Hi, I'm Derick Sheldrick Am Passionate about crafting engaging
-              websites that boost brand presence and delight users. Let's create
-              something extraordinary together.
-            </p>
-            <div class="connect">
-              <a href="https://www.linkedin.com/in/sheldrick-derick-90320a175" target="_blank"
-                ><i class="fa-brands fa-linkedin"></i
-              ></a>
-              <a href="https://github.com/dericksheldrick" target="_blank" alt="Github"
-                ><i class="fa-brands fa-github"></i
-              ></a>
-            </div>
-          </div>
-          <div><img src="./image/profile.png" alt="My official picture" /></div>
-        </div>
-      </section>
-      <section id="About">
-        <div class="About">
-          <img
-            class="about_pics"
-            src="./image/DSCN5293-COLLAGE.jpg"
-            alt="My picture at a waterfall"
-          />
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Derick's Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/main.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+<body>
 
-          <div class="title">
-            <h1>About Me</h1>
-            <p>
-              I'm a passionate web developer with expertise in HTML, CSS, and JavaScript. I thrive on new challenges and view coding as a creative and problem-solving canvas. Inspired by nature through scenic trails and road trips, I bring enriched creativity to my work. Driven by curiosity and a desire to make a positive impact, I'm eager to collaborate and innovate in the digital landscape.</p>
-           <div class="more">
-                <div class="more-items">
-                  <input type="checkbox" id="tech-stack" class="more-checkedbox">
-                  <label for="tech-stack" class="more-header">Tech Stack</label>
-                  <div class="more-content">
-                    <ul>
-                      <li>HTML</li>
-                      <li>CSS</li>
-                      <li>JavaScript</li>
-                      <li>SAAS</li>
-                      <li>Figma</li>
-                      <li>Git and Github</li>
-                    </ul>
-                  </div>
-                </div>
+  <nav class="navbar">
+    <div class="nav-content">
+      <div class="logo-section">
+        <img src="/image/prof.png" alt="Profile" class="nav-profile">
+        <span class="logo">Derick</span>
+      </div>
+      <button class="hamburger" id="menu-toggle">
+        ☰
+      </button>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><button id="theme-toggle">🌙</button></li>
+      </ul>
+    </div>
+  </nav>
+ 
 
-                <div class="more-items">
-                  <input type="checkbox" id="skills" class="more-checkedbox">
-                  <label for="skills" class="more-header">My Skills</label>
-                  <div class="more-content">
-                    <ul>
-                      <li>Front-end development</li>
-                      <li>Responsive Designs</li>
-                      <li>Creating friendly User interfaces</li>
-                      <li>Complex problem solving skills</li>
-                    </ul>
-                  </div>
-                </div>
 
-                <div class="more-items">
-                  <input type="checkbox" id="Education" class="more-checkedbox">
-                  <label for="Education" class="more-header">Education</label>
-                  <div class="more-content">
-                    <ul>
-                      <li>Apprentice Code Academy</li>
-                      <li>Certification In Junior Web Developer</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-          </div>
-        </div>
-      </section>
-      <section class="Projects" id="project">
-        <div class="title">
-          <h1>Projects</h1>
-          <p>Embark on unique development journeys with each project.</p>
-        </div>
-        <div class="projects_cards">
-          <div class="project" >
-            <img src="./image/Gold.jpg" alt="survey">
-            <div class="layer">
-              <h3>Tourist Virtual Reality Website</h3>
-            <p>Developed the Afric-VR-Tours is a virtual reality website. Purely developed on Bootstrap</p>
-            <a href="https://dericksheldrick.github.io/Afric-VR-Tours" target="_blank" alt="pokedex"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-            </div>
-          </div>
-          <div class="project2">
-            <img src="https://www.learnreligions.com/thmb/i5bkt8-GvcC3i0lKH0bipUFPyts=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/ChurchDefinition-59a81a6bee344fc7ada3f75589a1f183.jpg" alt="church">
-            <div class="layer">
-              <h3>Church Website</h3>
-            <p>Build a church website from scratch using HTML and SAAS. It is responsive across all devices. It also contain gallery section.</p>
-            <a href="https://wordreconciliationministries.netlify.app" target="_blank"alt="pokedex"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-            </div>
-          </div>
-          
-          <div class="project3" >
-            <img src="https://images.unsplash.com/photo-1616196334218-caffdc9b2317?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="personal portfolio">
-            <div class="layer">
-              <h3>Pokedex App</h3>
-              <p>This my Pokedex app developed using tailwind css and Pokedex API. The APP is responsive across all devices</p>
-              <a href="https://dericksheldrick.github.io/pokedex_tailwindcss/" target="_blank" alt="pokedex app"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-            </div>
-          </div>
-          </div>
-        </div>
-      </section>
-      <section class="contact" id="Contact">
-        <div class="main">
-          <p class="title">Get in Touch</p>
-          <h1>
-            Let's chat! Feel free to reach out to me.</h1>
-          <p>
-            Thank you for stopping by my website! I'm delighted to hear from you and ready to help with any questions or projects you have. Whether you're looking for professional assistance or just want to treat me to a coffee, I'm here to lend a hand with a smile.
-          </p>
-          <hr>
-          <form>
-            <label for="fname">First Name</label><br />
-            <input type="text" id="fname" required name="fname"  /><br>
-            <label for="lname">Last Name</label><br>
-            <input type="text" id="lname" required name="lname"  /><br />
-            <label for="email">Email Address</label><br />
-            <input type="email" id="email" required name="email"  /><br />
-            <label for="message">Message</label><br />
-            <textarea id="message" name="message" rows="4" cols="50">
-Leave us message</textarea
-            ><br />
-            <input type="radio" id="follow" name="follow" />
-            <label for="follow"
-              >I agree to receive email updates on the project</label
-            ><br />
+  <header class="hero" data-aos="fade-up">
+    <h1>
+      Hi, I'm Derick Sheldrick
+      <img src="./image/wave.png" alt="waving hands" class="waving" />
+    </h1>
+    <p><span id="typing"></span></p>
+    <div class="cta-buttons">
+      <a href="#projects">View Projects</a>
+      <a href="/assest/DerickSheldrick CV2.pdf" target="_blank">Download CV</a>
+    </div>
+  </header>
 
-            <input type="submit" value="submit" />
-          </form>
+  <div class="container">
+
+    <section id="about" data-aos="fade-right">
+      <h2>About Me</h2>
+      <p>I transitioned into tech from a background in customer service, bringing strong communication and problem-solving skills into every project. Before joining Moringa School, I had already begun learning to code — driven by curiosity and the desire to build simple, human-centered solutions.</p>
+      <p>During my time at Moringa, I worked on several real-world projects, including a collaborative group capstone where we built a full-stack application from scratch. I enjoy working in teams, sharing ideas, and building clean, scalable code that makes a real impact.</p>
+      <ul>
+        <li>🧠 Problem-solver with hands-on project experience</li>
+        <li>🎓 Moringa School graduating in Novermber (FullStack Software Development)</li>
+        <li>🤝 Team player with group project experience</li>
+        <li>🚀 Lifelong learner, always improving my craft</li>
+      </ul>
+    </section>
+
+    <section id="skills" data-aos="fade-up">
+      <h2>Skills</h2>
+      <div class="skills">
+        <span>HTML</span>
+        <span>SCSS</span>
+        <span>Tailwind</span>
+        <span>JavaScript</span>
+        <span>Python</span>
+        <span>Flask</span>
+        <span>FastAPI</span>
+        <span>React</span>
+        <span>Nextjs</span>
+        <span>MYSQL</span>
+        <span>SQLite</span>
+        <span>Rest API</span>
+        <span>Postgres</span>
+        <span>Netlify</span>
+        <span>Render</span>
+        <span>Git & GitHub</span>
+        <span>Figma</span>
+      </div>
+    </section>
+
+    <section id="experience" data-aos="fade-up">
+      <h2>Experience</h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <h3>2022 - 2024</h3>
+          <p>🧪 Self-Taught Projects & Learning</p>
+          <ul>
+            <li>Built several practice websites to strengthen my HTML, CSS/SCSS, and basic JavaScript skills.</li>
+            <li>Projects included a personal portfolio, a church website mockup, and a virtual tours website prototype.</li>
+            <li>Focused on building responsive layouts, improving design sense, and writing clean, structured code.</li>
+          </ul>
         </div>
-          <img class="image"
-            src="./image/contact.jpg"
-            alt="my picture with phone in my hands"</>
+        <div class="timeline-item">
+          <h3>2025 - Present</h3>
+          <p>🎓 Full-Stack Software Development Student, Moringa School</p>
+          <p>Graduating November 2025</p>
+          <ul>
+            <li>Participated in the Jagedo Hackathon — our team won for creating a practical and user-friendly solution under time pressure.</li>
+            <li>Completed a group capstone project, building a full-stack application using agile development and Git.</li>
+            <li>Gained hands-on experience with frontend, backend, and deployment tools.</li>
+          </ul>
         </div>
-        <div class="phone">
-          <a href="#" target="_blank"
-            ><i class="fa-solid fa-envelope"></i>Email<br>
-              sheldrickderick9@gmail.com</a
-          >
-          <a href="#" target="_blank"
-            ><i class="fa-solid fa-phone"></i>Phone<br>+254716438173</a
-          >
+        <div class="timeline-item">
+          <h3>August 2025 - Present</h3>
+          <p>🚧 Building & Deepening Technical Skills</p>
+          <ul>
+            <li>Working on personal full-stack projects to reinforce concepts learned at Moringa.</li>
+            <li>Exploring advanced topics like authentication, API integration, and UI/UX best practices</li>
+            <li>Preparing for entry into the tech industry by focusing on real-world problem-solving and consistent improvement.</li>
+          </ul>
         </div>
-      </section>
-    </main>
-    <footer>
-      <section class="footer">
-        <div class="title">
-          <h1>
-            Transforming Ideas into Reality<span>-Contact Us Today!</span>
-          </h1>
+      </div>
+    </section>
+
+    <section id="projects" data-aos="fade-up">
+      <h2>Projects</h2>
+      <div class="projects">
+        <div class="project-card">
+          <img src="image/church website.JPG" alt="Church website Screenshot">
+          <h3>Word Reconciliation Ministries Website</h3>
+          <p>A clean and responsive website built to simulate a church website. This project focused on building layout skills, styling with SCSS, and practicing mobile responsiveness and structured content. It laid the foundation for my interest in building accessible, real-world web experiences</p>
+          <ul>
+            <li>Role: Solo Developer</li>
+            <li>Type: Frontend-only Practice Project</li>
+            <li>Tech: HTML, SCSS, JavaScript</li>
+          </ul>
+          <a href="https://wordreconciliationministries.netlify.app/" target="_blank">Live site</a>
         </div>
-        <div class="socials">
-          <a href="https://github.com/dericksheldrick" target="_blank"
-            ><i class="fa-brands fa-github"></i>Github</a
-          >
-          <a href="https://www.linkedin.com/in/sheldrick-derick-90320a175" target="_blank"
-            ><i class="fa-brands fa-linkedin"></i>Linkedin</a
-          >
-          <a href="https://x.com/sheldrickderick" target="_blank"
-            ><i class="fa-brands fa-square-x-twitter"></i>Twitter</a
-          >
-          <a href="mailto:sheldrickderick9@gmail.com" target="_blank"
-            ><i class="fa-solid fa-envelope"></i>Gmail</a
-          >
+        <div class="project-card">
+          <img src="/image/innomarket.JPG" alt="innomarket Screenshot">
+          <h3>Innovation Marketplace</h3>
+          <p>A platform that helps students showcase and monetize graded academic projects. Employers can discover talent, and users can buy branded merchandise via the integrated e-commerce section. I worked on the UI/UX and built key frontend features using Tailwind, Firebase Auth, and Framer Motion.</p>
+          <ul>
+            <li>Role: Frontend Developer & UI/UX Designer</li>
+            <li>Type: Group Project (6 members)</li>
+            <li>Tech: Next.js, Tailwind CSS, Firebase, Framer Motion | Flask, PostgreSQL, Docker</li>
+          </ul>
+          <a href="https://innovation-marketplace.vercel.app/" target="_blank"> Live site</a>
         </div>
-        <hr />
-        <div class="copyright">
-          <p>&copy; 2024 Boss Enterprise. All rights reserved.</p>
-          <a href="#home" class="scroll-to-top"
-            ><i class="fa-solid fa-house"></i
-          ></a>
+        <div class="project-card">
+          <img src="/image/shelcy.JPG" alt="shelcy Screenshot">
+          <h3>Shelcy E-commerce Store</h3>
+          <p>A minimal e-commerce store built with React and styled using Tailwind CSS. Features product browsing, shopping cart functionality, and dynamic routing. Backend is powered by a custom JSON server hosted on Render. Created to sharpen skills in frontend state management, API integration, and component-based architecture.</p>
+           <ul>
+            <li>Role:Solo Developer | Type: Personal Project</li>
+            <li>Tech: React, Tailwind CSS, JSON Server (Render), Netlify</li>
+          </ul>
+          <a href="https://shelcy.netlify.app/#/shop" target="_blank">Live site</a>
         </div>
-      </section>
-    </footer>
-  </body>
+      </div>
+    </section>
+
+    <section id="contact" data-aos="fade-up">
+      <h2>Contact</h2>
+      <p>Email: sheldrickderick9@gmail.com</p>
+      <p>
+        <a href="https://github.com/dericksheldrick">GitHub</a> |
+        <a href="https://www.linkedin.com/in/sheldrick-derick/">LinkedIn</a>
+      </p>
+    </section>
+
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Derick. Built with HTML + SCSS.</p>
+  </footer>
+
+  <script>
+    AOS.init();
+
+    // Typing effect
+    const text = ["Fullstack Developer", "Customer Service Expert", "Freelancer"];
+    let count = 0;
+    let index = 0;
+    let currentText = '';
+    let letter = '';
+
+    (function type() {
+      if (count === text.length) count = 0;
+      currentText = text[count];
+      letter = currentText.slice(0, ++index);
+
+      document.getElementById('typing').textContent = letter;
+      if (letter.length === currentText.length) {
+        count++;
+        index = 0;
+        setTimeout(type, 1500);
+      } else {
+        setTimeout(type, 100);
+      }
+    })();
+
+    // Dark mode toggle
+    const toggleBtn = document.getElementById('theme-toggle');
+    toggleBtn.addEventListener('click', () => {
+      document.body.classList.toggle('dark-mode');
+    });
+
+    const nav_toggleBtn = document.getElementById('menu-toggle');
+    const navLinks = document.querySelector('.nav-links');
+
+    nav_toggleBtn.addEventListener('click', () => {
+      navLinks.classList.toggle('show');
+    });
+  </script>
+
+</body>
 </html>
